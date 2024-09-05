@@ -1,15 +1,15 @@
-title:              Clean Blog
-email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
-baseurl:            "/startbootstrap-clean-blog-jekyll"
+title:              Sarah Jayne Coaching
+email:              sarahjtrusy@gmail.com
+description:        Life Coaching for Young Adults
+author:             Sarah J. Trusty
+baseurl:            "/home"
 url:                "https://startbootstrap.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  
+twitter_username:   
+github_username:    sarahjaynecoaching
+facebook_username:  
+instagram_username: sarahjaynecoaching 
 linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
