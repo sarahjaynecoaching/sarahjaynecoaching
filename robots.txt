@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+
+Allow: /home.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /videos.html
+Allow: /_posts/

@@ -1,0 +1,75 @@
+:root {
+    --base-background-color: #ffffff; /* Set this to your desired base background color */
+}
+
+// Black bar divider
+.divider {
+    border: 0;
+    height: 6px; /* Thickness of the divider */
+    background: #454545; /* Color of the divider */
+    margin: 1rem 0; /* Spacing above and below */
+  }
+// Invisible bar divider (for spacing)
+.invis-divider {
+    border: 0;
+    height: 1px; /* Thickness of the divider */
+    background: var(--base-background-color); /* Color of the divider */
+    margin: 0rem 0; /* Spacing above and below */
+  }
+
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+// eh?
+.large-quote {
+font-size: 1.3rem;
+font-style: bold;
+line-height: 1.5;
+color: #7c7c7c; /* Adjust color as needed */
+}
+
+// Dividing block sections 
+.block-section {
+  --bg-color: var(--base-background-color); /* Base background color */
+  background-color: var(--bg-color);
+  padding: 1rem;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.block-section-home {
+  --bg-color: #ceeaea; /* New background color */
+}
+.block-section-video1 {
+  --bg-color: #ceeaea; /* New background color */
+}
+
+// eh?
+.container {
+    padding-left: 15px; /* Ensure padding within the container is maintained */
+    padding-right: 15px; /* Ensure padding within the container is maintained */
+}
+
+// Home page semi-transparent bar, text, and button
+.transparent-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  padding: 20px 0;
+}
+.bar-text {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}

@@ -2,32 +2,60 @@
 layout: default
 ---
 
-<!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
-  <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>{{ site.title }}</h1>
-            {% if site.description %}
-            <span class="subheading">{{ site.description }}</span>
-            {% endif %}
-          </div>
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}');">
+{% else %}
+<header class="masthead">
+{% endif %}
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row align-items-center justify-content-end">
+      <div class="col-lg-6 col-md-8">
+        <div class="page-heading text-right">
+          <h1>{{ site.title }}</h1>
+          {% if site.description %}
+          <span class="subheading">{{ site.description }}</span>
+          {% endif %}
         </div>
       </div>
     </div>
-  </header>
+  </div>
+  
+  <!-- New Transparent Bar -->
+  <!-- <div class="transparent-bar">
+    <div class="container text-center">
+      <p class="bar-text">clicky clicky you are sticky</p>
+      <a class="btn btn-primary" href="/home/videos">Get Free Help!</a>
+    </div>
+  </div> -->
 
+</header>
+
+<!-- BLUE QUOTE SECTION -->
+<section class="block-section block-section-home">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+    <div class="row align-items-center my-5">
+      <!-- Quote on the right -->
+      <div class="text-center large-quote">
+          <p>Hi! I’m Sarah. I am a certified life coach, I’m 23 years old, I’m living with my 2 best friends (my brother and sister), and I am on a mission to help you let go of fear so you can start living your dreams and blessing the world around you.</p>
+          <p>Two years ago, I was faced with the worst fear and anxiety I had ever experienced. I felt stuck, and couldn’t see the future I had always dreamed of. I felt completely hopeless….</p> 
+          <p>Until I realized I <strong>could</strong> move forward and make decisions anyway. Even though I felt afraid. I learned how to let go and just keep moving. Fear doesn’t stop me from living the life I want to live anymore. And I want you to experience that too. The world needs what you have to offer.</p>
+          <p>I truly believe you and I are very similar, which has prepared me to help you learn the steps you need to take in order to start living your dreams TODAY. Because I’ve been there. And there is so much hope.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        {{ content }}
+<!-- POST CONTAINER -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+
+      {{ content }}
+      <!-- Divider Bar -->
+      <div class="my-5"><hr class="invis-divider"></div>
+      <h2 class="post-title">See some of my Blog Posts!</h2>
+      <div class="my-5"><hr class="divider"></div>
 
         <!-- Home Post List -->
         {% for post in site.posts limit : 5 %}
