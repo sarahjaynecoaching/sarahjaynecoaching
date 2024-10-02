@@ -3,15 +3,15 @@ layout: default
 ---
 
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}');">
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}'); background-position: right; background-size: cover;">
 {% else %}
 <header class="masthead">
 {% endif %}
   <div class="overlay"></div>
   <div class="container">
-    <div class="row align-items-center justify-content-end">
+    <div class="row align-items-center justify-content-start">
       <div class="col-lg-6 col-md-8">
-        <div class="page-heading text-right">
+        <div class="page-heading text-left" style="margin-top: 50px;"> <!-- Control the margin here -->
           <h1>{{ site.title }}</h1>
           {% if site.description %}
           <span class="subheading">{{ site.description }}</span>
@@ -20,7 +20,7 @@ layout: default
       </div>
     </div>
   </div>
-  
+</header>
   <!-- New Transparent Bar -->
   <!-- <div class="transparent-bar">
     <div class="container text-center">
@@ -28,14 +28,12 @@ layout: default
       <a class="btn btn-primary" href="/home/videos">Get Free Help!</a>
     </div>
   </div> -->
-
 </header>
 
 <!-- BLUE QUOTE SECTION -->
 <section class="block-section block-section-home">
   <div class="container">
     <div class="row align-items-center my-5">
-      <!-- Quote on the right -->
       <div class="text-center large-quote">
           <p>Hi! I’m Sarah. I am a certified life coach, I’m 23 years old, I’m living with my 2 best friends (my brother and sister), and I am on a mission to help you let go of fear so you can start living your dreams and blessing the world around you.</p>
           <p>Two years ago, I was faced with the worst fear and anxiety I had ever experienced. I felt stuck, and couldn’t see the future I had always dreamed of. I felt completely hopeless….</p> 
@@ -45,6 +43,24 @@ layout: default
     </div>
   </div>
 </section>
+<section class="block-section block-section-contactme">
+  <div class="container">
+    <div class="row align-items-center my-5">
+      <div class="col-md-6 text-center d-flex flex-column justify-content-center">
+        <div class="large-quote">
+          <p>Put some text here</p>
+        </div>
+        <a href="your-link-here" class="btn btn-primary mt-3">Start Moving Forward</a> <!-- Replace with your link -->
+      </div>
+      <div class="col-md-6">
+        <div class="rounded-frame"> <!-- Add a div to wrap the image -->
+          <img src="img/headshot1.png" alt="Description of the image" class="img-fluid" /> <!-- Replace with your image path -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- POST CONTAINER -->
 <div class="container">
