@@ -11,18 +11,21 @@ layout: default
   <div class="container">
     <div class="row align-items-center justify-content-start">
       <div class="col-lg-6 col-md-8">
-        <div class="page-heading text-left" style="margin-top: 50px;"> <!-- Control the margin here -->
-          <h1>{{ site.title }}</h1>
-          {% if site.description %}
-          <span class="subheading">{{ site.description }}</span>
-          {% endif %}
+        <div class="page-heading text-left" style="margin-top: 40px;"> <!-- Control the margin here -->
+          <div class="title-box"> <!-- New box for title and description -->
+            <h1><strong>{{ site.title }}</strong></h1>
+            {% if site.description %}
+            <span class="subheading">{{ site.description }}</span>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
     <!-- TRANSPARENT BAR -->
     <div class="transparent-bar">
       <div class="container text-center">
-        <p class="bar-text">clicky clicky you are sticky</p>
+        <p class="bar-text">Welcome to Sarah Jayne Coaching! Click here to get immediate access to some
+          free materials and get started right away.</p>
         <a class="btn btn-primary" href="/home/videos">Get Free Help!</a>
       </div>
     </div>
@@ -31,83 +34,28 @@ layout: default
 </header>
 
 <!-- BLUE QUOTE SECTION -->
-<section class="block-section block-section-home">
-  <div class="container">
-    <div class="row align-items-center my-5">
-      <div class="text-center large-quote">
-          <p>Fear doesn’t stop me from living the life I want to live anymore. And I want you to experience that too. The world needs what you have to offer. Right now. Exactly as you are.</p>
-          <p>You have a purpose and potential that is way bigger than you’ve ever known. Let me help you see it, so you can go and start living the life you’ve been dreaming about.</p> 
-          <p>I’m Sarah. I am a certified life coach, I’m 23 years old, and I am on a mission to help you stop getting stuck in indecision, and start taking tangible steps toward the life you really want.</p>
-          <p>Two years ago, I was faced with the worst fear and anxiety I had ever experienced. I felt stuck, and couldn’t see the future I had always dreamed of. I felt completely hopeless…</p>
-          <p>Until I realized I <strong>could</strong> move forward and make decisions anyway. Even though I felt afraid. I learned how to let go and just keep moving.</p>
-          <p>I truly believe you and I are very similar, which has prepared me to help you learn the steps you need to take in order to start living your dreams TODAY. Let’s do this together.</p>
-      </div>
-    </div>
+<section class="Cwide-section-home">
+  <div class="text-block">
+    <p class="quote">Fear doesn’t stop me from living the life I want to live anymore. I want you to experience that too! The world needs what you have to offer. Right now. Exactly as you are.
+      Your purpose and potential is so much bigger than you’ve ever known. Let me help you see it, so you can live the life you’ve been dreaming about.
+      I’m Sarah. I’m 23 years old, I'm a certified life coach, and I am on a mission to help you stop getting stuck in indecision, and start taking tangible steps toward the life you really want.
+      Two years ago, I was faced with the worst fear and anxiety I had ever experienced. I felt stuck, and couldn’t see the future I had always dreamed of. I felt completely hopeless…
+      Until I realized I <strong>could</strong> move forward and make decisions anyway. Even though I felt afraid. I learned how to let go and just keep moving.
+      I truly believe you and I are very similar, which has prepared me to help you learn the steps you need to take in order to start living your dreams TODAY. Let’s do this together.</p>
   </div>
 </section>
 
 <!-- TAN BUTTON SECTION -->
-<section class="block-section block-section-contactme">
-  <div class="container">
-    <div class="row align-items-center my-5">
-      <div class="col-md-6 text-center d-flex flex-column justify-content-center">
-        <div class="large-quote">
-          <p>Put some text here</p>
-        </div>
-        <a href="/home/contact/" class="btn btn-primary mt-3">Start Moving Forward</a> <!-- Replace with your link -->
-      </div>
-      <div class="col-md-6">
-        <div class="rounded-frame"> <!-- Add a div to wrap the image -->
-          <img src="img/headshot2.png" alt="Description of the image" class="img-fluid" /> <!-- Replace with your image path -->
-        </div>
-      </div>
+<section class="Cwide-section-home">
+  <div class="text-block">
+    <div class="col-md-6">
+      <p><strong>Looking for something more? I'm offering one-on-one coaching right now so you can
+        finally take the steps you've been hestitating on taking. Stop looking at the life you want
+        from afar!</strong></p>
+      <a href="/home/contact/" class="btn btn-primary mt-3">Start Moving Forward</a>
+    </div>
+    <div class="rounded-frame">
+      <img src="img/headshot2.png" alt="Headshot of Coach Sarah" class="img-fluid" />
     </div>
   </div>
 </section>
-
-
-<!-- POST CONTAINER -->
-<!--
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-
-      {{ content }}
-      <div class="my-5"><hr class="invis-divider"></div>
-      <h2 class="post-title">See some of my Blog Posts!</h2>
-      <div class="my-5"><hr class="divider"></div>
-
-        {% for post in site.posts limit : 5 %}
-
-        <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-            {% endif %}
-          </a>
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-          </p>
-        </article>
-
-        <hr>
-
-        {% endfor %}
-
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
--->

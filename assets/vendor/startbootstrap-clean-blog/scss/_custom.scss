@@ -1,37 +1,66 @@
 :root {
-    --base-background-color: #ffffff; /* Set this to your desired base background color */
+    --base-background-color: #ffffff;
+
+    --color-palette-one: #727D71;
+    --color-palette-one-rgb: 114, 125, 113;
+
+    --color-palette-two: #EAE1CE;
+    --color-palette-two-rgb: 234, 225, 206;
+
+    --color-palette-three: #DEA47E;
+    --color-palette-three-rgb: 222, 164, 126;
+
+    --color-palette-four: #012622;
+    --color-palette-four-rgb: 1, 38, 34;
+
+    --color-palette-five: #56351E;
+    --color-palette-five-rgb: 86, 53, 30;
 }
 
-// Black bar divider
-.divider {
-    border: 0;
-    height: 6px; /* Thickness of the divider */
-    background: #454545; /* Color of the divider */
-    margin: 1rem 0; /* Spacing above and below */
-  }
-// Invisible bar divider (for spacing)
-.invis-divider {
-    border: 0;
-    height: 1px; /* Thickness of the divider */
-    background: var(--base-background-color); /* Color of the divider */
-    margin: 0rem 0; /* Spacing above and below */
-  }
+.Cwide-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Cwide-section-home {
+  @extend .Cwide-section; 
+  background-color: var(--color-palette-one); /* Section background color */
+  height: 450px;
+}
+.text-block {
+  width: 85%;
+  height: 100%;
+  background-color: rgba(var(--color-palette-two-rgb), $alpha: 1.0); /* Text block background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.quote {
+  font-size: 1.3rem;
+  font-style: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #333333;
+}
+.title-box {
+  background-color: rgba(var(--color-palette-one-rgb), 0.75); /* Black with 50% opacity */
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners */
+  display: inline-block; /* Fit box to content size */
+}
+.page-heading h1,
+.page-heading .subheading {
+  color: var(--base-background-color); /* Ensures text is readable against dark background */
+}
+
 
 .my-5 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-  }
-
-// eh?
-.large-quote {
-font-size: 1.3rem;
-font-style: bold;
-line-height: 1.5;
-color: #7c7c7c; /* Adjust color as needed */
-padding-left: 20px; /* Adjust this value as needed */
-padding-right: 20px; /* Adjust this value as needed */
 }
-
 // Dividing block sections 
 .block-section {
   --bg-color: var(--base-background-color); /* Base background color */
@@ -81,15 +110,9 @@ padding-right: 20px; /* Adjust this value as needed */
   --bg-color: #d1e7ff;
   background-color: var(--bg-color);
 }
-
-.block-section-home {
-  --bg-color: #eae1ce; /* New background color */
-}
 .block-section-contactme{
-  --bg-color: #eae1ce; /* New background color */
+  --bg-color: #eae1ce; 
 }
-
-// eh?
 .container {
     padding-left: 15px; /* Ensure padding within the container is maintained */
     padding-right: 15px; /* Ensure padding within the container is maintained */
@@ -102,7 +125,7 @@ padding-right: 20px; /* Adjust this value as needed */
   left: 0;
   width: 100%;
   height: 140px;
-  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  background-color: rgba(var(--color-palette-five-rgb), 0.6); /* Semi-transparent black */
   padding: 20px 0;
 }
 .bar-text {
@@ -111,20 +134,11 @@ padding-right: 20px; /* Adjust this value as needed */
   margin-top: 10px;
   margin-bottom: 10px;;
 }
-
-// .btn-home {
-//   background-color: #007bff;
-//   border-color: #007bff;
-// }
-// .btn-home:hover {
-//   background-color: #0056b3;
-//   border-color: #004085;
-// }
-
 .page-heading {
   margin-top: 50px; /* Adjust this value to control how far down you want the text */
 }
 
+// Home page Circular Image
 .rounded-frame {
   width: 400px; /* Set a fixed width */
   height: 400px; /* Set a fixed height */
@@ -135,7 +149,6 @@ padding-right: 20px; /* Adjust this value as needed */
   justify-content: center; /* Center horizontally */
   border: 5px solid #7c7c7c; /* Optional: add a border */
 }
-
 .rounded-frame img {
   width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */

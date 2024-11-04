@@ -7,7 +7,7 @@
 
     .navbar-brand {
         font-weight: 800;
-        color: $gray-800;
+        color: $white;
     }
 
     .navbar-toggler {
@@ -15,7 +15,7 @@
         font-weight: 800;
         padding: 13px;
         text-transform: uppercase;
-        color: $gray-800;
+        color: $white;
     }
 
     .navbar-nav {
@@ -31,7 +31,7 @@
 
     @media only screen and (min-width: 992px) {
         border-bottom: 1px solid transparent;
-        background: transparent;
+        background: rgba(var(--color-palette-one-rgb),0.4);
 
         .navbar-brand {
             padding: 10px 20px;
@@ -78,11 +78,11 @@
             -webkit-transition: -webkit-transform 0.2s;
             -moz-transition: -moz-transform 0.2s;
             transition: transform 0.2s;
-            border-bottom: 1px solid darken($white, .05);
-            background-color: fade-out($white, .1);
+            // border-bottom: 1px solid darken($white, .05);
+            background-color: rgba(var(--color-palette-one-rgb),0.75);
 
             .navbar-brand {
-                color: $gray-900;
+                color: $white;
 
                 &:focus,
                 &:hover {
@@ -93,7 +93,7 @@
             .navbar-nav {
                 >li.nav-item {
                     >a {
-                        color: $gray-900;
+                        color: $white;
 
                         &:focus,
                         &:hover {
