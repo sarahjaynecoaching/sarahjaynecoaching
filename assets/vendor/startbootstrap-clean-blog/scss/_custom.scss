@@ -1,14 +1,14 @@
 :root {
     --base-background-color: #ffffff;
 
-    --color-palette-one: #727D71;
-    --color-palette-one-rgb: 114, 125, 113;
+    --color-palette-one: #edf1ec; //Green
+    --color-palette-one-rgb: 237, 241, 236;
 
-    --color-palette-two: #EAE1CE;
-    --color-palette-two-rgb: 234, 225, 206;
+    --color-palette-two: #f0ebe2;  //light tan
+    --color-palette-two-rgb: 240, 235, 226;
 
-    --color-palette-three: #DEA47E;
-    --color-palette-three-rgb: 222, 164, 126;
+    --color-palette-three: #DEA47E;  
+    --color-palette-three-rgb: 241, 164, 126;
 
     --color-palette-four: #012622;
     --color-palette-four-rgb: 1, 38, 34;
@@ -46,7 +46,7 @@
   color: #333333;
 }
 .title-box {
-  background-color: rgba(var(--color-palette-one-rgb), 0.75); /* Black with 50% opacity */
+  background-color: rgba(var(--color-palette-one-rgb), 0.0); /* Black with 50% opacity */
   padding: 10px;
   border-radius: 10px; /* Rounded corners */
   display: inline-block; /* Fit box to content size */
