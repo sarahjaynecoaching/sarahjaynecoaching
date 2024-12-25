@@ -56,6 +56,34 @@
   color: var(--base-background-color); /* Ensures text is readable against dark background */
 }
 
+.short-masthead {
+  padding: 10px 0; /* Adjust vertical space */
+  height: 200px; /* Set a fixed height */
+  text-align: center; /* Center the content */
+  background: none; /* Remove any background styling */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+}
+
+.short-masthead .page-heading h1 {
+  font-size: 2rem; /* Smaller title size */
+  margin: 0; /* Remove default margins */
+  line-height: 1.2; /* Adjust line height to fit within the available space */
+}
+
+
+
+.short-masthead .page-heading h1 {
+  font-size: 2rem; /* Smaller title size */
+  margin: 0; /* Remove default margins */
+}
+
+.short-masthead .page-heading .subheading {
+  font-size: 1rem; /* Smaller subtitle size */
+  color: #666; /* Optional: lighter text color */
+}
+
 
 .my-5 {
     margin-top: 3rem;
@@ -76,7 +104,7 @@
   }
   .row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
   }
@@ -95,21 +123,27 @@
     max-width: 80%;
   }
 }
-.block-section-video1 {
-  @extend .block-section-video; // Inherits all styles from .block-section-video
-  --bg-color: #ceeaea;
-  background-color: var(--bg-color);
+
+.block-section-video1 .video-frame {
+  border: 5px solid #ccc; /* Adjust border style and color as needed */
+  border-radius: 10px;    /* Optional: adds rounded corners */
+  max-width: 100%;       /* Ensures responsiveness */
+  aspect-ratio: 16 / 9;
+  min-width: 800px;       /* Minimum width */
 }
-.block-section-video2 {
-  @extend .block-section-video;
-  --bg-color: #ffecd1;
-  background-color: var(--bg-color);
+.block-section-video1 .video-description {
+  margin-top: 10px;
+  font-size: 16px;       /* Adjust for desired text size */
+  line-height: 1.5;
 }
-.block-section-video3 {
-  @extend .block-section-video;
-  --bg-color: #d1e7ff;
-  background-color: var(--bg-color);
+.block-section-video1 .text-left {
+  text-align: left;
 }
+.block-section-video1 .text-right {
+  text-align: right;
+
+}
+
 .block-section-contactme{
   --bg-color: #eae1ce; 
 }
