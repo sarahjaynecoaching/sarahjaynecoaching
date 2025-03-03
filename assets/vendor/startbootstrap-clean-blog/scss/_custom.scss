@@ -2,10 +2,10 @@
     --base-background-color: #ffffff;
 
     --color-palette-one: #edf1ec; //Green
-    --color-palette-one-rgb: 237, 241, 236;
+    --color-palette-one-rgb: 125, 125, 125;
 
-    --color-palette-two: #f0ebe2;  //light tan
-    --color-palette-two-rgb: 240, 235, 226;
+    --color-palette-two: #e8caa9;  //light tan
+    --color-palette-two-rgb: 232, 202, 169;
 
     --color-palette-three: #DEA47E;  
     --color-palette-three-rgb: 241, 164, 126;
@@ -15,6 +15,14 @@
 
     --color-palette-five: #56351E;
     --color-palette-five-rgb: 86, 53, 30;
+
+    --base-white: #dddddd;
+    --base-white-rgb: 238, 238, 238;
+    --base-black: #111111;
+    --base-black-rgb: 17, 17, 17;
+    --base-gray: #777777;
+    --base-gray-rgb: 119, 119, 119;
+    --base-gray-light: #a0a0a0;
 }
 
 .Cwide-section {
@@ -25,18 +33,33 @@
 }
 .Cwide-section-home {
   @extend .Cwide-section; 
-  background-color: var(--color-palette-one); /* Section background color */
+  background-color: var(--base-white-rgb); /* Section background color */
+  min-height: 450px;
+  flex-direction: column;
+}
+.Cwide-section-home-2 {
+  @extend .Cwide-section; 
+  background-color: rgba(var(--color-palette-two-rgb), 0.8); /* Section background color */
   height: 450px;
 }
 .text-block {
   width: 85%;
   height: 100%;
-  background-color: rgba(var(--color-palette-two-rgb), $alpha: 1.0); /* Text block background color */
+  background-color: var(--base-white-rgb); /* Text block background color */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
+  gap: 0px; /* Control vertical space between items */
+}
+.bigquote {
+  font-size: 5rem;
+  font-style: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 5px; /* Adjust this value to control the spacing below bigquote */
 }
 .quote {
   font-size: 1.3rem;
@@ -44,6 +67,16 @@
   line-height: 1.5;
   text-align: center;
   color: #333333;
+  margin-top: 5px; /* Adjust this value to control the spacing above quote */
+  margin-bottom: 5px;
+}
+.bigquotebtm {
+  font-size: 5rem;
+  font-style: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #333333;
+  margin-top: 5px; /* Adjust this value to control the spacing below bigquote */
 }
 .title-box {
   background-color: rgba(var(--color-palette-one-rgb), 0.0); /* Black with 50% opacity */
@@ -159,7 +192,7 @@
   left: 0;
   width: 100%;
   height: 140px;
-  background-color: rgba(var(--color-palette-five-rgb), 0.6); /* Semi-transparent black */
+  background-color: rgba(var(--color-palette-one-rgb), 0.6); /* Semi-transparent black */
   padding: 20px 0;
 }
 .bar-text {
